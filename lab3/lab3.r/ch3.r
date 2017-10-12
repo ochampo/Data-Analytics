@@ -63,7 +63,27 @@
         facet_wrap(~ class)
       #### seprating data based on class 
       
+      ####3.7 
+      ggplot(data = diamonds) + 
+        geom_bar(mapping = aes(x = cut))
       
+      ### simple bar graph
       
+      ggplot(data = diamonds) + 
+        stat_count(mapping = aes(x = cut))
       
+  ### using the stats count methods 
+      
+      demo <- tribble(
+        ~cut,         ~freq,
+        "Fair",       1610,
+        "Good",       4906,
+        "Very Good",  12082,
+        "Premium",    13791,
+        "Ideal",      21551
+      )
+      
+      ggplot(data = demo) +
+        geom_bar(mapping = aes(x = cut, y = freq), stat = "identity")  
+      ### reset the stats, not sure what they mean 
       
