@@ -62,28 +62,45 @@
         geom_point(mapping = aes(x = displ, y = hwy)) + 
         facet_wrap(~ class)
       #### seprating data based on class 
+      ################ 3.6
+      # left
+      ggplot(data = mpg) + 
+        geom_point(mapping = aes(x = displ, y = hwy))
+      ### bullet point lines 
+      # right
+      ggplot(data = mpg) + 
+        geom_smooth(mapping = aes(x = displ, y = hwy))
+      ## a smooth line 
+      ggplot(data = mpg) + 
+        geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv))
+      # 
+      ggplot(data = mpg) +
+        geom_smooth(mapping = aes(x = displ, y = hwy))
       
-      ####3.7 
-      ggplot(data = diamonds) + 
-        geom_bar(mapping = aes(x = cut))
+      ggplot(data = mpg) +
+        geom_smooth(mapping = aes(x = displ, y = hwy, group = drv))
       
-      ### simple bar graph
+      ggplot(data = mpg) +
+        geom_smooth(
+          mapping = aes(x = displ, y = hwy, color = drv),
+          show.legend = FALSE
+        )
+      #### not sure what this code does
       
-      ggplot(data = diamonds) + 
-        stat_count(mapping = aes(x = cut))
+      ggplot(data = mpg) + 
+        geom_point(mapping = aes(x = displ, y = hwy)) +
+        geom_smooth(mapping = aes(x = displ, y = hwy))
       
-  ### using the stats count methods 
+      ### to display mutlitple geom
+      ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+        geom_point(mapping = aes(color = class)) + 
+        geom_smooth()
+      ### mutltiple with diffrent graph 
       
-      demo <- tribble(
-        ~cut,         ~freq,
-        "Fair",       1610,
-        "Good",       4906,
-        "Very Good",  12082,
-        "Premium",    13791,
-        "Ideal",      21551
-      )
+      ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+        geom_point(mapping = aes(color = class)) + 
+        geom_smooth(data = filter(mpg, class == "subcompact"), se = FALSE)
       
-      ggplot(data = demo) +
-        geom_bar(mapping = aes(x = cut, y = freq), stat = "identity")  
-      ### reset the stats, not sure what they mean 
+      
+      
       
