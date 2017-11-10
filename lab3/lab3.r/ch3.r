@@ -60,47 +60,17 @@
       
       ggplot(data = mpg) + 
         geom_point(mapping = aes(x = displ, y = hwy)) + 
-        facet_wrap(~ class)
+        facet_wrap(~ class, nrow = 2)
       #### seprating data based on class 
-      ################ 3.6
-      # left
       ggplot(data = mpg) + 
-        geom_point(mapping = aes(x = displ, y = hwy))
-      ### bullet point lines 
-      # right
-      ggplot(data = mpg) + 
-        geom_smooth(mapping = aes(x = displ, y = hwy))
-      ## a smooth line 
-      ggplot(data = mpg) + 
-        geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv))
-      # 
-      ggplot(data = mpg) +
-        geom_smooth(mapping = aes(x = displ, y = hwy))
-      
-      ggplot(data = mpg) +
-        geom_smooth(mapping = aes(x = displ, y = hwy, group = drv))
-      
-      ggplot(data = mpg) +
-        geom_smooth(
-          mapping = aes(x = displ, y = hwy, color = drv),
-          show.legend = FALSE
-        )
-      #### not sure what this code does
+        geom_point(mapping = aes(x = displ, y = hwy)) + 
+        facet_grid(drv ~ cyl)
+      ### plot a grid   
+          ########################question for 3.5.1
       
       ggplot(data = mpg) + 
-        geom_point(mapping = aes(x = displ, y = hwy)) +
-        geom_smooth(mapping = aes(x = displ, y = hwy))
-      
-      ### to display mutlitple geom
-      ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-        geom_point(mapping = aes(color = class)) + 
-        geom_smooth()
-      ### mutltiple with diffrent graph 
-      
-      ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
-        geom_point(mapping = aes(color = class)) + 
-        geom_smooth(data = filter(mpg, class == "subcompact"), se = FALSE)
-      
-      
+        geom_point(mapping = aes(x = drv, y = cyl))
+      ### overlaping data does not make a lot of sense
+      data <- data_frame(ColA = c(1,2,3,4), ColB = c(5,6,7,8), ColC = c(9,10,11,12), ColD = c(13,14,15,16))
       
       
