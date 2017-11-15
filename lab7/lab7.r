@@ -23,7 +23,14 @@ CSUS2011 = CSUS2011 %>% na.omit()
 outlier(CSUS2011)
 
 cleaned <- scrub(CSUS2011, max=9)
-error.bars(myData)
+error.bars(CSUS2011)
+
+r <- lowerCor(CSUS2011)
+corPlot(r)
+corr.test(CSUS2011)
+
+fa.parallel(CSUS2011)
+vss(CSUS2011)
 
 #gapminder[1,]
 
