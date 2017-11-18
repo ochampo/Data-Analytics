@@ -74,9 +74,7 @@ View(year97)
 ggplot(data = year97) + 
 geom_point(mapping = aes(x = reorder(state,diffrenceideo), y =  diffrenceideo))+
   coord_flip()
-
-
-
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/lab6/graph1.png")
 
 
 
@@ -87,7 +85,7 @@ geom_point(mapping = aes(x = reorder(state,diffrenceideo), y =  diffrenceideo))+
 ggplot(data = year97 ) +
   geom_bar(mapping = aes( x = reorder(state,diffrenceideo), y = diffrenceideo  ), stat = "identity")+
   coord_flip()
-
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/lab6/graph2.png")
 
 #### question 3
 year97[1,]
@@ -95,14 +93,17 @@ View(year97)
 ggplot(data = year97) + 
   geom_bar(mapping = aes(x = reorder(state,govtideo),  y = povrate, fill = govtideo), stat = "identity")+
 coord_flip()
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/lab6/graph3.png")
 
 
 
 
 ### question 4 
 ggplot(data = year97) + 
-  geom_point(mapping = aes(x = govtideo, y = govtideo))+
+  geom_bar(mapping = aes(x = reorder(state,citzideo),  y = povrate, fill = citzideo), stat = "identity")+
   coord_flip()
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/lab6/graph4.png")
+
 ### question 5 
 
 
