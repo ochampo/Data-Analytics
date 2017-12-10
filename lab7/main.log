@@ -1,11 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.25)  28 NOV 2017 11:57
-entering extended mode
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2017.8.25)  8 DEC 2017 16:40
  restricted \write18 enabled.
- %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -58,35 +56,33 @@ Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
-
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+Package ifluatex Info: LuaTeX detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
+Package: luatex-loader 2010/03/09 v0.4 Lua module loader (HO)
+
+(/usr/share/texlive/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks16
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO)
+
 Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
 Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
@@ -162,8 +158,8 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
 )
 \Hy@SectionHShift=\skip43
 )
@@ -177,7 +173,7 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen112
 \extrarowheight=\dimen113
-\NC@list=\toks16
+\NC@list=\toks17
 \extratabsurround=\skip44
 \backup@length=\skip45
 )
@@ -187,7 +183,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@target=\dimen117
 \TX@delta=\dimen118
 \TX@cols=\count105
-\TX@ftn=\toks17
+\TX@ftn=\toks18
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
@@ -205,7 +201,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count108
 \c@LT@tables=\count109
 \c@LT@chunks=\count110
-\LT@p@ftn=\toks18
+\LT@p@ftn=\toks19
 )
 
 ! LaTeX Error: Two \documentclass or \documentstyle commands.
@@ -215,7 +211,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.19 \documentclass{
-                    article}
+                  article}
 The document may only declare one class.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -239,7 +235,7 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 ) (./main.aux)
-\openout1 = `main.aux'.
+\openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
@@ -273,8 +269,8 @@ LaTeX Info: Redefining \nameref on input line 21.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
-\openout3 = `main.out'.
 
+\openout3 = main.out
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -283,12 +279,12 @@ LaTeX Info: Redefining \nameref on input line 21.
 \scratchbox=\box33
 \nofMPsegments=\count115
 \nofMParguments=\count116
-\everyMPshowfont=\toks19
+\everyMPshowfont=\toks20
 \MPscratchCnt=\count117
 \MPscratchDim=\dimen123
 \MPnumerator=\count118
 \makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks20
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -296,13 +292,12 @@ Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.tif,.jpeg,.PNG,.PDF,.JPG,.JPEG,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 34.
@@ -335,60 +330,60 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 Overfull \hbox (525.60999pt too wide) in paragraph at lines 96--99
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][] 
+][][][][][][][][][][][][][][][][] 
  []
 
 [2]
 Overfull \hbox (164.25623pt too wide) in paragraph at lines 111--112
-[][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (137.97595pt too wide) in paragraph at lines 133--134
-[][][][][][][][][][][][] 
+[][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (197.10657pt too wide) in paragraph at lines 142--143
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][] 
+][][][][][][][] 
  []
 
 
 Overfull \hbox (91.98547pt too wide) in paragraph at lines 143--144
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (210.2467pt too wide) in paragraph at lines 144--145
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
  []
 
 [3]
 Overfull \hbox (39.42493pt too wide) in paragraph at lines 155--156
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (65.7052pt too wide) in paragraph at lines 156--158
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (78.84534pt too wide) in paragraph at lines 177--178
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 187.
 
 Overfull \hbox (78.84534pt too wide) in paragraph at lines 189--191
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 195.
-
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -398,65 +393,66 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 201.
 
 Overfull \hbox (39.42493pt too wide) in paragraph at lines 202--203
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (151.11609pt too wide) in paragraph at lines 203--204
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (32.85486pt too wide) in paragraph at lines 212--213
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (65.7052pt too wide) in paragraph at lines 213--214
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (269.37732pt too wide) in paragraph at lines 214--215
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][] 
+][][][][][][][] 
  []
 
 
 Overfull \hbox (6.57458pt too wide) in paragraph at lines 216--217
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (13.14465pt too wide) in paragraph at lines 225--226
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (91.98547pt too wide) in paragraph at lines 226--230
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (105.12561pt too wide) in paragraph at lines 230--231
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
  []
 
 
 Overfull \hbox (223.38684pt too wide) in paragraph at lines 231--232
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][] 
+][][][][] 
  []
 
 
 Overfull \hbox (52.56506pt too wide) in paragraph at lines 232--237
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [5]
 Overfull \hbox (203.67664pt too wide) in paragraph at lines 237--238
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][] 
+][][][][][] 
  []
 
 [6]
@@ -467,19 +463,19 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.289 ...ludegraphics[widt=\textwidth]{quest1.png}
-                                                  
+l.296 \includegraphics[widt=\textwidth]{quest1.png}
+                                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<quest1.png, id=253, 505.89pt x 505.89pt>
+<quest1.png, id=254, 505.89pt x 505.89pt>
 File: quest1.png Graphic file (type png)
  <use quest1.png>
-Package pdftex.def Info: quest1.png used on input line 289.
+Package pdftex.def Info: quest1.png used on input line 296.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (72.26875pt too wide) in paragraph at lines 289--290
- [][] 
+Overfull \hbox (72.26875pt too wide) in paragraph at lines 296--297
+ [][][] 
  []
 
 
@@ -492,19 +488,19 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 ...ludegraphics[widt=\textwidth]{quest2.png}
-                                                  
+l.302 \includegraphics[widt=\textwidth]{quest2.png}
+                                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<quest2.png, id=254, 505.89pt x 505.89pt>
+<quest2.png, id=255, 505.89pt x 505.89pt>
 File: quest2.png Graphic file (type png)
  <use quest2.png>
-Package pdftex.def Info: quest2.png used on input line 295.
+Package pdftex.def Info: quest2.png used on input line 302.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (72.26875pt too wide) in paragraph at lines 295--296
- [][] 
+Overfull \hbox (72.26875pt too wide) in paragraph at lines 302--303
+ [][][] 
  []
 
 
@@ -517,19 +513,19 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.301 ...ludegraphics[widt=\textwidth]{Ttest1.png}
-                                                  
+l.308 \includegraphics[widt=\textwidth]{Ttest1.png}
+                                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<Ttest1.png, id=255, 514.92375pt x 187.70125pt>
+<Ttest1.png, id=256, 514.92375pt x 187.70125pt>
 File: Ttest1.png Graphic file (type png)
  <use Ttest1.png>
-Package pdftex.def Info: Ttest1.png used on input line 301.
+Package pdftex.def Info: Ttest1.png used on input line 308.
 (pdftex.def)             Requested size: 514.92249pt x 187.70079pt.
 
-Overfull \hbox (81.30249pt too wide) in paragraph at lines 301--302
- [][] 
+Overfull \hbox (81.30249pt too wide) in paragraph at lines 308--309
+ [][][] 
  []
 
 
@@ -542,19 +538,19 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 ...ludegraphics[widt=\textwidth]{Ttest2.png}
-                                                  
+l.314 \includegraphics[widt=\textwidth]{Ttest2.png}
+                                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<Ttest2.png, id=256, 590.205pt x 192.72pt>
+<Ttest2.png, id=257, 590.205pt x 192.72pt>
 File: Ttest2.png Graphic file (type png)
  <use Ttest2.png>
-Package pdftex.def Info: Ttest2.png used on input line 307.
+Package pdftex.def Info: Ttest2.png used on input line 314.
 (pdftex.def)             Requested size: 590.20355pt x 192.71951pt.
 
-Overfull \hbox (156.58356pt too wide) in paragraph at lines 307--308
- [][] 
+Overfull \hbox (156.58356pt too wide) in paragraph at lines 314--315
+ [][][] 
  []
 
 
@@ -567,56 +563,65 @@ See the keyval package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313 ...ludegraphics[widt=\textwidth]{quest5.png}
-                                                  
+l.320 \includegraphics[widt=\textwidth]{quest5.png}
+                                                 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<quest5.png, id=257, 505.89pt x 505.89pt>
+<quest5.png, id=258, 505.89pt x 505.89pt>
 File: quest5.png Graphic file (type png)
  <use quest5.png>
-Package pdftex.def Info: quest5.png used on input line 313.
+Package pdftex.def Info: quest5.png used on input line 320.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (72.26875pt too wide) in paragraph at lines 313--314
- [][] 
+Overfull \hbox (72.26875pt too wide) in paragraph at lines 320--321
+ [][][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-[7] [8 <./quest1.png (PNG copy)>] [9 <./quest2.png (PNG copy)>] [10 <./Ttest1.p
-ng> <./Ttest2.png>] [11 <./quest5.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
+[7] [8<./quest1.png>] [9<./quest2.png>] [10<./Ttest1.png><./Ttest2.png>]
+[11<./quest5.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7C2F44A0F42EDC279D3EFD71FB51706F;299.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
- ) 
-Here is how much of TeX's memory you used:
- 7604 strings out of 493029
- 109268 string characters out of 6136234
- 248842 words of memory out of 5000000
- 10871 multiletter control sequences out of 15000+600000
- 9208 words of font info for 32 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 29i,6n,42p,983b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (11 pages, 468297 bytes).
-PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 329 compressed objects within 4 object streams
- 213 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E89B404B231F79E0F9D1944FED2B91D6;338
+(rerunfilecheck)             After:  7C2F44A0F42EDC279D3EFD71FB51706F;299.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 8076 strings out of 495004
+ 100000,221844 words of node,token memory allocated
+ 285 words of node memory still in use:
+   2 hlist, 1 vlist, 1 rule, 2 glue, 42 glue_spec, 1 write nodes
+   avail lists: 2:29,3:137,4:2539,5:570,6:2016,7:278,8:44,9:1703,10:150
+ 11203 multiletter control sequences out of 65536+600000
+ 43 fonts using 1700911 bytes
+ 29i,6n,42p,964b,1453s stack positions out of 5000i,500n,10000p,200000b,100000s
+<</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><</usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><</usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><</usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><</usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb><</usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr17.pfb><</usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><</usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (11 pages, 468000 bytes).
+
+PDF statistics: 325 PDF objects out of 1000 (max. 8388607)
+ 295 compressed objects within 3 object streams
+ 213 named destinations out of 1000 (max. 131072)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

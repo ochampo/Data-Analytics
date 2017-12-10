@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {3}{Related Work}{4}{0}{2}
+\beamer@sectionintoc {4}{Mobile Applications}{5}{0}{3}
+\beamer@sectionintoc {5}{Databases}{6}{0}{4}
+\beamer@sectionintoc {6}{Application Study}{7}{0}{5}
+\beamer@sectionintoc {7}{Back up plan}{8}{0}{6}
+\beamer@sectionintoc {8}{Future work}{9}{0}{7}
+\beamer@sectionintoc {9}{Conclustion}{10}{0}{8}
