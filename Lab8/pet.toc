@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Objective}{2}
+\contentsline {section}{\numberline {2}Reading assignment}{2}
+\contentsline {subsection}{\numberline {2.1}The Article\IeC {\textquoteright }s Themed Questions}{2}
+\contentsline {section}{\numberline {3} R code that was Used}{3}
+\contentsline {section}{\numberline {4}Personal Idea}{9}
+\contentsline {section}{\numberline {5}Statement 1: The decline in marriage rates}{10}
+\contentsline {section}{\numberline {6}Statement 2:The narrowing gender wage gap}{15}
+\contentsline {section}{\numberline {7}Statement 3: The preference (or cultural) shift towards market work }{17}
+\contentsline {section}{\numberline {8}Statement 4: The change in womens bargaining power within the household.}{20}
+\contentsline {section}{\numberline {9}Psychology professor and Econ Professor}{23}
