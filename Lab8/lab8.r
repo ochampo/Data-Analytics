@@ -27,7 +27,9 @@ WifeBeater <- read.csv(file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Anal
 
 
 qplot(Peru, unmarried, data = WifeBeater, alpha = I(1/4)) + geom_smooth(method = lm, se = F)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest1Peru.png")
 qplot(Senegal, unmarried, data = WifeBeater, alpha = I(1/4)) + geom_smooth(method = lm, se = F)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest1Senegal.png")
 View(WifeBeater)
 ### we can see that that less women are less likely to let their husband beat the m 
 
@@ -50,14 +52,16 @@ write.csv(LiteracyGender, file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-A
 LiteracyGender <- read.csv(file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/Data/LiteracyRateLiner.csv", header=TRUE, sep= ",")
 
 qplot(Spain, unmarried, data = LiteracyGender, alpha = I(1/4)) + geom_smooth(method = lm, se = F)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest1Spain.png")
 qplot(Turkey, unmarried, data = LiteracyGender, alpha = I(1/4)) + geom_smooth(method = lm, se = F)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest1Turkey.png")
 View(LiteracyGender)
 
 
 
 ####################################### End Of Question 1 #################
 
-###### Question 2 ############# The narrowing gender wage gap,
+############## Question 2 ############# The narrowing gender wage gap,
 schooling <- filter(
   twoCountry ,
   Indicator.Name ==  "Expected years of schooling, female" 
@@ -73,21 +77,77 @@ write.csv(schooling, file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analyt
 
 
 schooling <- read.csv(file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/Data/schoolingCor.csv", header=TRUE, sep= ",")
+
+
 Finland <- select(schooling,Finland,Q1)
 cor(Finland,method = "pearson")
 Greece <- select(schooling,Greece,Q1)
 cor(Finland)
 pairs.panels(Finland)
-pairs.panels(Greece)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest2Finland.png")
 describe(schooling)
-corPlot(Greece)
+corPlot(Finland)
 View(schooling)
 
 ####################### end of  Question 2  #############
 
 
 
-### Question 3 ###### preference (or cultural) shift towards market work, and
+### Question 3 ###### preference (or cultural) shift towards market work
+
+
+laborforceGender <- filter(
+  twoCountry ,
+  Indicator.Name ==  "Labor force, female")
+
+
+laborforceGender <- filter(
+  laborforceGender ,  
+  Country.Name  ==  "Mexico" | Country.Name  ==  "United States"
+)
+
+write.csv(laborforceGender, file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/Data/laborforceGender.csv")
+
+
+
+laborforceGender <- read.csv(file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/Data/laborforceGendergraph.csv", header=TRUE, sep= ",")  
+
+test <- select(laborforceGender,MEX,Year)
+View(test)
+t.test(test)
+
+laborforceGender[1,]
+
+qplot(MEX, Year, data = laborforceGender, alpha = I(1/4)) + geom_smooth(method = lm, se = F)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest3Mexico.png")
+
+
+laborforceGender %>% ggplot(aes(x = MEX, y = Year)) +
+  geom_point(alpha = I(1/4)) + geom_smooth()
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest3Mexico2.png")
+
+
+qplot(USA, Year, data = laborforceGender, alpha = I(1/4)) + geom_smooth(method = lm, se = F)
+ggsave("/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/images/quest3USA.png")
+
+
+
+View(laborforceGender)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,7 +190,6 @@ decisionMakerGraph %>% ggplot(aes(x = Peru, y = Year)) +
 decisionMakerGraph %>% ggplot(aes(x = Bangladesh, y = Year)) +
   geom_point(alpha = I(1/4)) + geom_smooth()
 
-t.test(data = twoData,  HealthcareSpending ~ Year)
 
 
 
@@ -143,12 +202,23 @@ major<- filter(
   )
 
 major<- filter(
-  twoCountry,
+  major,
   Country.Name ==  "Peru" 
 )
 
+write.csv(major, file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/Data/major.csv")
 
+major <- read.csv(file = "/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/Data/MarjorGraph.csv", header=TRUE, sep= ",")
+ggplot(data = major) +
+  geom_point(mapping = aes(x = Year, y = PER))
+t.test(major)
 View(major)
+
+
+major %>% ggplot(aes(x = PER, y = Year)) +
+  geom_point(alpha = I(1/4)) + geom_smooth()
+
+
 
 ###########End of question 4####
 
@@ -161,7 +231,7 @@ womenHiv <- filter(
 )
 
 
-twoCountry <- filter(
+employ <- filter(
   twoCountry ,
   Indicator.Name ==  "Employment to population ratio, 15+, female (%) (modeled ILO estimate)
 " | Indicator.Name ==  "Employment to population ratio, 15+, male (%) (modeled ILO estimate)
@@ -169,7 +239,7 @@ twoCountry <- filter(
 )
 
 
-twoCountry <- filter(
+married <- filter(
   twoCountry ,
   Indicator.Name ==  "Women who were first married by age 18 (% of women ages 20-24)"
 )
@@ -188,19 +258,19 @@ laborforceGender <- filter(
 
 View(laborforceGender)
 
-twoCountry <- filter(
+femaleWage <- filter(
   twoCountry ,
   Indicator.Name ==  "Wage and salaried workers, female (% of female employment)" | Indicator.Name ==  "Wage and salaried workers, male (% of male employment)"
 )
 
-twoCountry <- filter(
+Childemploy <- filter(
   twoCountry ,
   Indicator.Name ==  "Children in employment, female (% of female children ages 7-14)" | Indicator.Name ==  "Children in employment, male (% of male children ages 7-14)
 "
 )
 
 
-twoCountry <- filter(
+business <- filter(
   twoCountry ,
   Indicator.Name ==  "Cost of business start-up procedures, female (% of GNI per capita)
 " | Indicator.Name ==  "Cost of business start-up procedures, male (% of GNI per capita)"
@@ -209,4 +279,4 @@ twoCountry <- filter(
 
 
 View(twoCountry)
-write.csv(twoCountry,"/home/o/ocampod/fall2017/cs390-ochampoo/Data-Analytics/Lab8/lab8data.csv")
+
